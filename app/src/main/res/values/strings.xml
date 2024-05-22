@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SosDoctors</string>
+    <string name="password">password</string>
+    <string name="email">email</string>
+    <string name="Register">Register</string>
+    <string name="Login">Login</string>
+    <string name="click_to_login">click_to_login</string>
+    <string name="click_to_register">click_to_register</string>
+    <string name="logout">logout</string>
+    <string name="SosDoctors">app_name</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO1</string>
+    <string name="todo2">TODO2</string>
+    <string name="notifications">NOTIFICATIONS</string>
+    <string name="todo3">TODO3</string>
+    <string name="messagerie">MESSAGERIE</string>
+    <string name="todo4">TODO4</string>
+    <string name="dossiers_m_dicaux">DOSSIERS MÉDICAUX</string>
+    <string name="todo5">TODO5</string>
+    <string name="missions">MISSIONS</string>
+
+</resources>

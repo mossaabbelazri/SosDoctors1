@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C3A76">
+
+    <!-- Header with App Name and Image -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:background="#0C3A76">
+
+        <!-- App Name Centered -->
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Profile Icon -->
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_profile"
+            android:contentDescription="@string/todo" />
+
+        <!-- Log Icon -->
+        <ImageView
+            android:id="@+id/logIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="11dp"
+            android:src="@drawable/ic_log"
+            android:contentDescription="@string/todo1" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/header"
+        android:background="#FFFFFF" />
+
+    <!-- Menu Buttons with Icons in a Linear Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="709dp"
+        android:layout_below="@id/header"
+        android:layout_marginTop="20dp"
+        android:background="#0C3A76"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <!-- Notification Button and Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="20dp"
+            android:background="#0C3A76"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/todo2"
+                android:src="@drawable/ic_notifications" />
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="209dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:background="#0C3A76"
+                android:text="@string/notifications"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Messaging Button and Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/todo3"
+                android:src="@drawable/ic_message" />
+
+            <Button
+                android:layout_width="209dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:background="#0C3A76"
+                android:text="@string/messagerie"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Medical Files Button and Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/todo4"
+                android:src="@drawable/ic_medical_file" />
+
+            <Button
+                android:layout_width="209dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:background="#0C3A76"
+                android:text="@string/dossiers_m_dicaux"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                tools:ignore="TextSizeCheck" />
+        </LinearLayout>
+
+        <!-- Missions Button and Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/todo5"
+                android:src="@drawable/ic_missions" />
+
+            <Button
+                android:layout_width="209dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:background="#0C3A76"
+                android:text="@string/missions"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:layout_marginStart="10dp"
+            android:background="#0C3A76"
+            android:text="@string/logout"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

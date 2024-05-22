@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HeaderStyle">
+        <item name="android:background">#94D4E3</item>
+        <item name="android:padding">6px</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">#0C3A76</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+</resources>

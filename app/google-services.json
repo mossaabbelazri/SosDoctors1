@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "77359885709",
+    "project_id": "sosdoctors77",
+    "storage_bucket": "sosdoctors77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77359885709:android:7722f3461626fe1b4121c4",
+        "android_client_info": {
+          "package_name": "com.example.sosdoctors"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1wC295H6Yp9lxKF1ZIHkWxjTiyGb7mt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
