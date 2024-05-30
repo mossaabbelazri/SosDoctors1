@@ -31,6 +31,8 @@
             android:layout_height="wrap_content"
             android:autofillHints="emailAddress"
             android:hint="@string/email"
+            android:textSize="20sp"
+            android:background="#FFFFFF"
             android:inputType="textEmailAddress"
             android:minHeight="48dp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -47,6 +49,8 @@
             android:layout_height="wrap_content"
             android:autofillHints="password"
             android:hint="@string/password"
+            android:textSize="20sp"
+            android:background="#FFFFFF"
             android:inputType="textPassword"
             android:minHeight="48dp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -63,13 +67,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/Register"
+        android:textStyle="bold"
+        android:textSize="20sp"
         android:layout_marginTop="20dp"
         android:background="#0C3A76"/>
 
     <!-- Link to Login Page -->
     <TextView
         android:id="@+id/loginNow"
-        android:text="@string/click_to_login"
+        android:text="Click to login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"

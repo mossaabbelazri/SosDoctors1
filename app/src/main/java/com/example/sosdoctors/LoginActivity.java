@@ -1,6 +1,5 @@
 package com.example.sosdoctors;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -20,29 +19,25 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-
 public class LoginActivity extends AppCompatActivity {
 
     TextInputEditText editTextEmail, editTextPassword;
     Button buttonLog;
     FirebaseAuth mAuth;
     ProgressBar progressBar;
-    TextView textView;
+    TextView textViewRegister, textViewForgotPassword;
 
     @Override
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser != null){
+        if (currentUser != null) {
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(intent);
             finish();
-
-
         }
     }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,24 +55,35 @@ public class LoginActivity extends AppCompatActivity {
         editTextPassword = findViewById(R.id.password);
         buttonLog = findViewById(R.id.buttonLogin);
         progressBar = findViewById(R.id.progressBar);
-        textView = findViewById(R.id.registerNow);
-        textView.setOnClickListener(view -> {
+        textViewRegister = findViewById(R.id.registerNow);
+        textViewForgotPassword = findViewById(R.id.forgetPassword);
+
+        textViewRegister.setOnClickListener(view -> {
             Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
             startActivity(intent);
             finish();
         });
+
+        textViewForgotPassword.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), ForgotPasswordActivity.class);
+            startActivity(intent);
+            finish();
+        });
+
         buttonLog.setOnClickListener(view -> {
             progressBar.setVisibility(View.VISIBLE);
             String email, password;
             email = String.valueOf(editTextEmail.getText());
             password = String.valueOf(editTextPassword.getText());
 
-            if(TextUtils.isEmpty(email)){
+            if (TextUtils.isEmpty(email)) {
                 Toast.makeText(LoginActivity.this, "Enter email", Toast.LENGTH_SHORT).show();
+                progressBar.setVisibility(View.GONE);
                 return;
             }
-            if(TextUtils.isEmpty(password)){
+            if (TextUtils.isEmpty(password)) {
                 Toast.makeText(LoginActivity.this, "Enter password", Toast.LENGTH_SHORT).show();
+                progressBar.setVisibility(View.GONE);
                 return;
             }
 
@@ -94,8 +100,6 @@ public class LoginActivity extends AppCompatActivity {
                             Toast.makeText(LoginActivity.this, "Authentication failed: " + errorMessage, Toast.LENGTH_LONG).show();
                         }
                     });
-
         });
-
     }
 }

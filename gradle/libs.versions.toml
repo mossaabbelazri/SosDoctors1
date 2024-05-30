@@ -7,6 +7,9 @@ firebaseMessaging = "24.0.0"
 gson = "2.10.1"
 guava = "27.0.1"
 guavaVersion = "27.0.1-android"
+javaWebsocket = "1.5.2"
+javaWebsocketJavaWebsocket = "1.5.6"
+javaWebsocketVersion = "1.5.6"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
@@ -16,17 +19,18 @@ activity = "1.8.0"
 constraintlayout = "2.1.4"
 googleServices = "4.4.1"
 firebaseAuth = "23.0.0"
+okhttp = "4.10.0"
 playServicesMaps = "18.2.0"
 retrofit = "2.9.0"
 
 [libraries]
 butterknife = { module = "com.jakewharton:butterknife", version.ref = "butterknifeCompiler" }
 butterknife-compiler = { module = "com.jakewharton:butterknife-compiler", version.ref = "butterknifeCompiler" }
-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version = "2.11.0" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
 firebase-firestore = { module = "com.google.firebase:firebase-firestore", version.ref = "firebaseFirestore" }
 firebase-messaging = { module = "com.google.firebase:firebase-messaging", version.ref = "firebaseMessaging" }
-gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+gson = { module = "com.google.code.gson:gson", version = "2.11.0" }
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
 guava-v2701android = { module = "com.google.guava:guava", version.ref = "guavaVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -34,12 +38,13 @@ ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitV
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+activity = { group = "androidx.activity", name = "activity", version = "1.9.0" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 google-services = { group = "com.google.gms", name = "google-services", version.ref = "googleServices" }
 firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version = "4.12.0" }
 play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
-retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version = "2.11.0" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
