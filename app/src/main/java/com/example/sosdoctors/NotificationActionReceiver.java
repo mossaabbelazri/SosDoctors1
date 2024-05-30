@@ -14,7 +14,7 @@ import java.net.URISyntaxException;
 public class NotificationActionReceiver extends BroadcastReceiver {
     private static final String TAG = "NotificationAction";
     private WebSocketClient webSocketClient;
-    private static final String WEBSOCKET_SERVER_ADDRESS = "ws://192.168.1.7:8080"; // Update with ws:// for non-secure WebSocket
+    private static final String WEBSOCKET_SERVER_ADDRESS = "ws://localhost:8080"; // Update with ws:// for non-secure WebSocket
 
     @Override
     public void onReceive(Context context, Intent intent) {
